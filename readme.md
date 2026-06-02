@@ -2,13 +2,14 @@
 
 This repository is organized by skill category:
 
-- `agentic-game-simulation/` — Core skills for modeling real-life situations as an explicit, agentic game.
+- `agentic-game-simulation/` — Simulation suite for modeling real-life situations as an explicit, agentic game.
 - `utils/` — Utility skills, currently focused on Tailscale operations.
 
-The two core simulation skills are:
+The simulation suite includes:
 
 - map yourself as a playable character with constraints, tendencies, and leverage
 - map the scenario as a multi-actor game with incentives, pressure points, and branches
+- enrich an actor with evidence-backed decisions, patterns, relationships, and artifact links
 
 The goal is not vague brainstorming. The goal is to build a practical digital twin of a situation, then prepare moves, counters, recovery paths, and escalation logic before the real interaction happens.
 
@@ -21,7 +22,8 @@ The utilities category currently includes:
 1. Install these skills with GitHub CLI: `gh skill install sgoley/skills`.
 2. Run **`/write-character-sheet`** to build your player model.
 3. Run **`/game-theory-scenario`** to model actors, incentives, and pathway branches.
-4. Use the output as a readiness pack for live execution, then iterate after each real-world round.
+4. Run **`/enrich-actor`** when a scenario needs an evidence-backed dossier on a specific actor.
+5. Use the output as a readiness pack for live execution, then iterate after each real-world round.
 
 ## Why These Skills Exist
 
@@ -73,6 +75,7 @@ Optionally run role simulation (one role agent per actor), then update your resp
 
 - **[write-character-sheet](./agentic-game-simulation/write-character-sheet/SKILL.md)** — Structured self-profiling skill that creates a richer character sheet (including habits, goals, resources, influences, and daily structure) with evidence-weighted scores.
 - **[game-theory-scenario](./agentic-game-simulation/game-theory-scenario/SKILL.md)** — Scenario planning skill that interviews for context, maps actor incentives and uncertainty, and outputs practical branch-ready preparation.
+- **[enrich-actor](./agentic-game-simulation/enrich-actor/SKILL.md)** — Evidence-backed actor dossier skill that expands known decisions, patterns, relationships, and artifacts from web search, directories, inbox/search integrations, and links.
 
 ### `utils`
 
