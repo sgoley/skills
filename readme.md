@@ -1,20 +1,20 @@
 # Skills for Agentic Digital Twin Planning
 
-My two core skills for modeling real-life situations as an explicit, agentic game:
+This repository is organized by skill category:
+
+- `agentic-game-simulation/` — Core skills for modeling real-life situations as an explicit, agentic game.
+- `utils/` — Utility skills, currently focused on Tailscale operations.
+
+The two core simulation skills are:
 
 - map yourself as a playable character with constraints, tendencies, and leverage
 - map the scenario as a multi-actor game with incentives, pressure points, and branches
 
 The goal is not vague brainstorming. The goal is to build a practical digital twin of a situation, then prepare moves, counters, recovery paths, and escalation logic before the real interaction happens.
 
-This repo also includes a Tailscale skill suite:
+The utilities category currently includes:
 
-- `tailscale-cli`
-- `tailscale-dns`
-- `tailscale-exit-nodes`
-- `tailscale-funnel`
-- `tailscale-serve`
-- `tailscale-ssh`
+- `tailscale-cli`, `tailscale-dns`, `tailscale-exit-nodes`, `tailscale-funnel`, `tailscale-serve`, `tailscale-ssh`
 
 ## Quickstart
 
@@ -69,14 +69,19 @@ Optionally run role simulation (one role agent per actor), then update your resp
 
 ## Reference
 
-- **[write-character-sheet](./write-character-sheet/SKILL.md)** — Structured self-profiling skill that creates a richer character sheet (including habits, goals, resources, influences, and daily structure) with evidence-weighted scores.
-- **[game-theory-scenario](./game-theory-scenario/SKILL.md)** — Scenario planning skill that interviews for context, maps actor incentives and uncertainty, and outputs practical branch-ready preparation.
-- **[tailscale-cli](./tailscale-cli/SKILL.md)** — Use the Tailscale CLI for device management, diagnostics, and configuration.
-- **[tailscale-dns](./tailscale-dns/SKILL.md)** — Configure MagicDNS, nameservers, split DNS, and search domains.
-- **[tailscale-exit-nodes](./tailscale-exit-nodes/SKILL.md)** — Route traffic through tailnet exit nodes.
-- **[tailscale-funnel](./tailscale-funnel/SKILL.md)** — Expose local services publicly with Tailscale Funnel.
-- **[tailscale-serve](./tailscale-serve/SKILL.md)** — Share local services/files internally over your tailnet.
-- **[tailscale-ssh](./tailscale-ssh/SKILL.md)** — Enable and manage Tailscale SSH access controls.
+### `agentic-game-simulation`
+
+- **[write-character-sheet](./agentic-game-simulation/write-character-sheet/SKILL.md)** — Structured self-profiling skill that creates a richer character sheet (including habits, goals, resources, influences, and daily structure) with evidence-weighted scores.
+- **[game-theory-scenario](./agentic-game-simulation/game-theory-scenario/SKILL.md)** — Scenario planning skill that interviews for context, maps actor incentives and uncertainty, and outputs practical branch-ready preparation.
+
+### `utils`
+
+- **[tailscale-cli](./utils/tailscale-cli/SKILL.md)** — Use the Tailscale CLI for device management, diagnostics, and configuration.
+- **[tailscale-dns](./utils/tailscale-dns/SKILL.md)** — Configure MagicDNS, nameservers, split DNS, and search domains.
+- **[tailscale-exit-nodes](./utils/tailscale-exit-nodes/SKILL.md)** — Route traffic through tailnet exit nodes.
+- **[tailscale-funnel](./utils/tailscale-funnel/SKILL.md)** — Expose local services publicly with Tailscale Funnel.
+- **[tailscale-serve](./utils/tailscale-serve/SKILL.md)** — Share local services/files internally over your tailnet.
+- **[tailscale-ssh](./utils/tailscale-ssh/SKILL.md)** — Enable and manage Tailscale SSH access controls.
 
 ## Suggested Sequence for Real Scenarios
 
